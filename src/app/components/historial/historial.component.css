@@ -1,0 +1,22 @@
+.form {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    padding: 12px;
+    background-color: rgb(17, 17, 91);
+    color: white;
+    width: 60%;
+    border-radius: 6px;
+}
+
+.title {
+    text-align: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
