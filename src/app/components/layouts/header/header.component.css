@@ -1,6 +1,11 @@
-img{
+/* img {
     aspect-ratio: 5/1;
-}
-nav{
+} */
+
+/* nav {
     width: 100vw;
+} */
+
+nav-link {
+    font-size: 15px;
 }
