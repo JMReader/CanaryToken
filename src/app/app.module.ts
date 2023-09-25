@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/layouts/header/header.component';
 import { HistorialComponent } from './components/historial/historial.component';
 import { PrincipalComponent } from './components/principal/principal.component';
+import { ListadoHistorialComponent } from './components/listado-historial/listado-historial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HistorialComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    ListadoHistorialComponent
   ],
   imports: [
     BrowserModule,
