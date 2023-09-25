@@ -1,6 +1,6 @@
 <app-header class="row col-12"></app-header>
 <div class="Container">
-    <div class="Form">
+    <div class="Form" *ngIf=" archivoSubido == false">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Archivo</label>
             <input type="file" class="form-control" id="exampleFormControlInput1">
@@ -9,7 +9,29 @@
             <label for="Descripcion" class="form-label">Descripcion</label>
             <textarea class="form-control" id="Descripcion" rows="3"></textarea>
         </div>
-        <button type="button" class="btn btn-outline-light">Generar Token</button>
-
+        <button (click)="GenerarToken()" type="button" class="btn btn-outline-light">Generar Token</button>
     </div>
+    <div class="Form" *ngIf="archivoSubido == true">
+        <div class="my-1">
+            Hemos generado su archivo canary Token
+            <div class=" cajita Archivo ">
+                Nombre_archivo.extension
+            </div>
+        
+        </div>
+        <div class="my-2">
+            UUID
+            <div class="cajita">
+                {{UUID}}
+                <button type="button" class="btn btn-outline-light">copiar</button>
+            </div> 
+        </div>
+        <div class="my-2">
+            <button (click)="GenerarToken()" type="button" class="btn ">Descargar archivo</button>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <form action=""></form>
 </div>
